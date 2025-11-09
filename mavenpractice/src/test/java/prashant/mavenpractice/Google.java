@@ -11,13 +11,16 @@ public class Google {
 		
 		
 		WebDriver driver =new ChromeDriver();
+		driver.manage().window().maximize();
+		System.out.println("Maximize window");
 		driver.get("https://www.google.com");
 		System.out.println("Tital of the url is: " +driver.getTitle());
-		driver.findElement(By.xpath(("/textarea[@id='APjFqb'])[1]"))).click();
 		System.out.println("Click on search bar");
-		driver.findElement(By.xpath(("/textarea[@id='APjFqb'])[1]"))).sendKeys("Prashant");
-		System.out.println("Entered value");
-
+		driver.findElement(By.xpath(("//a[@data-pid=\"23\"]"))).click();
+		System.out.println("Click on Gmail Button");
+		driver.quit();
+		
+		
 	}
 
 }
