@@ -1,5 +1,6 @@
 package prashant.mavenpractice;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -12,8 +13,10 @@ public class Google {
 		WebDriver driver =new ChromeDriver();
 		driver.get("https://www.google.com");
 		System.out.println("Tital of the url is: " +driver.getTitle());
-		driver.quit();
-		
+		driver.findElement(By.xpath(("/textarea[@id='APjFqb'])[1]"))).click();
+		System.out.println("Click on search bar");
+		driver.findElement(By.xpath(("/textarea[@id='APjFqb'])[1]"))).sendKeys("Prashant");
+		System.out.println("Entered value");
 
 	}
 
