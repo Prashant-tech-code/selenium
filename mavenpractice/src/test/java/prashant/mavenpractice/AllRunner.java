@@ -13,8 +13,11 @@ public class AllRunner {
 	            System.out.println("===== Running ReverseString.java =====");
 	            ReverseString.main(args);
 	            System.out.println("===== ReverseString.java Finished =====\n");
-
-	           
+	            
+	            System.out.println("===== Running HighestNO.java =====");
+	            HighestNO.main(args);
+	            System.out.println("===== HighestNO.java Finished =====\n");
+	            
 
 	            System.out.println("✅ All classes executed successfully!");
 	        } catch (Exception e) {
